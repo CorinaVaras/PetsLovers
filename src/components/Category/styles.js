@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components'
 import { skeletonStyle } from '../../styles/skeleton'
+import { Link as LinkRouter } from '@reach/router'
 
 export const ContainerCategorySkeleton = styled.div`
     display: flex;
@@ -29,7 +30,7 @@ export const CategoryTitle = styled.div`
     }
 `
 
-export const Anchor = styled.a`
+export const Link = styled(LinkRouter)`
   display: flex;
   flex-direction: column;
   text-align: center;
