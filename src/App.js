@@ -9,10 +9,7 @@ import { User } from './pages/User'
 import { NoRegisteredUser } from './pages/NoRegisteredUser'
 
 import { Router } from '@reach/router'
-// Componente con render props
-const UserLogged = ({ children }) => {
-  return children({ isAuth: false })
-}
+import Context from './Context'
 
 export const App = () => {
   return (
@@ -25,7 +22,7 @@ export const App = () => {
         <Detail path='/detail/:detailId' />
       </Router>
 
-      <UserLogged>
+      <Context.Consumer>
         {
             ({ isAuth }) =>
               isAuth
@@ -38,7 +35,7 @@ export const App = () => {
                   <NoRegisteredUser path='/user' />
                 </Router>
        }
-      </UserLogged>
+      </Context.Consumer>
       <NavBar />
     </>
   )
