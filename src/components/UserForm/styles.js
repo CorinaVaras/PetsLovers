@@ -2,7 +2,8 @@ import styled from 'styled-components'
 
 export const Form = styled.form`
   padding: 16px 0;
-  margin: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
 `
 export const Input = styled.input`
   border: 1px solid #ccc;
@@ -21,10 +22,18 @@ export const Button = styled.button`
   display: block;
   width: 100%;
   text-align: center;
+  &[disabled] {
+    opacity: .3;
+  }
 `
 
 export const Title = styled.h2`
   padding: 10px;
   font-size: 16px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+`
+
+export const Error = styled.span`
+  color: red;
+  margin-left: 10px;
 `
