@@ -35,5 +35,5 @@ export const Title = styled.h2`
 
 export const Error = styled.span`
   color: red;
-  margin-left: 10px;
+  margin-top: 5px;
 `
