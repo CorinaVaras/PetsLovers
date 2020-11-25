@@ -5,7 +5,6 @@
     "main": "index.js",
     "scripts": {
         "build": "webpack",
-        "lint": "standard",
         "dev": "webpack serve --history-api-fallback",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
@@ -35,16 +34,6 @@
         "react-dom": "^17.0.1",
         "react-icons": "^3.11.0",
         "styled-components": "^5.2.1"
-    },
-    "standard": {
-        "ignore": [
-            "/api/**"
-        ]
-    },
-    "eslintConfig": {
-        "extends": [
-            "./node_modules/standard/eslintrc.json"
-        ]
     },
     "editor.formatOnSave": true,
     "[javascript]": {
